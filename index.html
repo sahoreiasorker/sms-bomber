@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    text-align: center;
+}
+
+#number {
+    width: 100%;
+    margin: 20px 50px;
+    border: 2px solid pink;
+    border-radius: 5px;
+    height: 40px;
+    display: block;
+}
+
+button#button {
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 240px;
+    height: 40px;
+    color: green;
+    background-color: cyan;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    background: chocolate;
+    padding: 10px 20px;
+    border: 2px solid black;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+</style>
+<body>
+
+
+  
+
+    <input id="number" type="text">
+    <button id="button">Update number</button>
+    <a target="_blank" href="" id="done"></a>
+    <script>
+       document.getElementById("done").style.display="none";
+       document.getElementById("button").addEventListener("click", function(e){
+        // e.preventDefault();
+        document.getElementById("done").style.display="block";
+        var number= document.getElementById("number").value;
+        document.getElementById("done").innerText="SEND";
+        document.getElementById("done").href = `https://hadivai-mahirvai.my.id/copybajj_fuck.php?phone=`+number;
+       } )
+    </script>
+</body>
+<!-- …or create a new repository on the command line
+echo "# sms-bomber" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sahoreiasorker/sms-bomber.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/sahoreiasorker/sms-bomber.git
+git branch -M main
+git push -u origin main -->
+</html>
